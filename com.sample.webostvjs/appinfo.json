@@ -1,0 +1,11 @@
+{
+  "id": "com.sample.webostvjs",
+  "version": "1.0.0",
+  "vendor": "My Company",
+  "type": "web",
+  "main": "index.html",
+  "title": "app for webOSTV.js",
+  "icon": "icon.png",
+  "resolution": "1280x720",
+  "largeIcon": "largeIcon.png"
+}

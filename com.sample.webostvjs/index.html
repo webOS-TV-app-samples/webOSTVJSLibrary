@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sample App for webOSTV.js</title>
+  <style type="text/css">
+    body {
+      background: #dddddd;
+    }
+
+    h1 {
+      font-size: 18px;
+    }
+
+    h2 {
+      text-align: right;
+    }
+
+    table,
+    th,
+    td {
+      font-size: 18px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th,
+    td {
+      padding: 6px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      width: 10%;
+      background-color: gray;
+      color: white;
+    }
+
+    td {
+      width: 20%;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 3px;
+    }
+
+    button#refresh {
+      color: blue;
+    }
+
+    input#input {
+      margin-left: 20px;
+      font-size: 18px;
+      width: 180px;
+      text-align: center;
+      background-color: skyblue;
+    }
+
+  </style>
+  <script type="text/javascript" src="./webOSTVjs-1.2.3/webOSTV.js"></script>
+  <script type="text/javascript" src="./app4tv.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('load', function () { initPage() }, false);
+  </script>
+</head>
+
+<body>
+  <h1>Sample App for webOSTV.js</h1>
+  <h2><button id="refresh">Reload</button></h2>
+  <table>
+    <th rowspan=8 style="width:5%;">webOS</th>
+    <tr>
+      <th> libVersion </th>
+      <td id="libVersion"></td>
+      <th> platform.tv </th>
+      <td id="platform"></td>
+    </tr>
+    <tr>
+      <th> platformBack </th>
+      <td> <button id="platformBack" style="background-color:skyblue;"> BACK </button> </td>
+      <th> keyboard.isShowing </th>
+      <td>
+        <span id="keyboard"></span>
+        <input id="input" type="text" value="CLICK TO SHOW VKB"></input>
+      </td>
+    </tr>
+    <tr>
+      <th> fetchAppRootPath </th>
+      <td id="fetchAppRootPath" colspan=3></td>
+    </tr>
+    <tr>
+      <th> fetchAppId </th>
+      <td id="fetchAppId"></td>
+      <th> fetchAppInfo </th>
+      <td id="fetchAppInfo"></td>
+    </tr>
+    <tr>
+      <th> systemInfo </th>
+      <td id="systemInfo" colspan=3></td>
+    </tr>
+    <tr>
+      <th> deviceInfo </th>
+      <td id="deviceInfo" colspan=3></td>
+    </tr>
+    <tr>
+      <th> service.request </th>
+      <td id="service" colspan=3></td>
+    </tr>
+  </table>
+</body>
+
+</html>

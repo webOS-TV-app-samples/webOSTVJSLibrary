@@ -1,0 +1,9 @@
+{
+  "id": "com.sample.launch",
+  "version": "1.0.0",
+  "type": "web",
+  "main": "index.html",
+  "title": "app for webOSDev.LaunchParams",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png"
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sample App for webOSTV.js</title>
+    <script src="lib/webOSTVjs-1.2.4/webOSTV.js"></script>
+    <script src="js/app4tv.js"></script>
+  </head>
+  <body>
+    <h1>Sample App for webOSTV.js</h1>
+    <h2><button id="refresh">Reload</button></h2>
+    <table>
+      <tr>
+        <th rowspan="8" style="width: 5%">webOS</th>
+      </tr>
+      <tr>
+        <th>libVersion</th>
+        <td id="libVersion"></td>
+        <th>platform.tv</th>
+        <td id="platform"></td>
+      </tr>
+      <tr>
+        <th>platformBack</th>
+        <td>
+          <button id="platformBack" style="background-color: skyblue">
+            BACK
+          </button>
+        </td>
+        <th>keyboard.isShowing</th>
+        <td>
+          <span id="keyboard"></span>
+          <input id="input" type="text" placeholder="CLICK TO SHOW VKB" />
+        </td>
+      </tr>
+      <tr>
+        <th>fetchAppRootPath</th>
+        <td id="fetchAppRootPath" colspan="3"></td>
+      </tr>
+      <tr>
+        <th>fetchAppId</th>
+        <td id="fetchAppId"></td>
+        <th>fetchAppInfo</th>
+        <td id="fetchAppInfo"></td>
+      </tr>
+      <tr>
+        <th>systemInfo</th>
+        <td id="systemInfo" colspan="3"></td>
+      </tr>
+      <tr>
+        <th>deviceInfo</th>
+        <td id="deviceInfo" colspan="3"></td>
+      </tr>
+      <tr>
+        <th>service.request</th>
+        <td id="service" colspan="3"></td>
+      </tr>
+    </table>
+  </body>
+</html>

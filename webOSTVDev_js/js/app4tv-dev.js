@@ -1,3 +1,5 @@
+window.addEventListener('load', function () { initDevPage() }, false);
+
 function print(content, res) {
   document.querySelector('#' + content).innerHTML = res;
 }
@@ -16,24 +18,24 @@ function getConnectionStatus(status) {
   }
   var info =
     '<table>' +
-      '<tr>' +
-        '<th>wired.state</th>' +
-        '<td>' + status.wired.state + '</td>' +
-        '<th>wifi.state</th>' +
-        '<td>' + status.wifi.state + '</td>' +
-      '</tr>' +
-      '<tr>' +
-        '<th>ipAddress</th>' +
-        '<td>' + connection.ipAddress + '</td>' +
-        '<th>gateway</th>' +
-        '<td>' + connection.gateway + '</td>' +
-      '</tr>' +
-      '<tr>' +
-        '<th>netmask</th>' +
-        '<td>' + connection.netmask + '</td>' +
-        '<th>dns1</th>' +
-        '<td>' + connection.dns1 + '</td>' +
-      '</tr>' +
+    '<tr>' +
+    '<th>wired.state</th>' +
+    '<td>' + status.wired.state + '</td>' +
+    '<th>wifi.state</th>' +
+    '<td>' + status.wifi.state + '</td>' +
+    '</tr>' +
+    '<tr>' +
+    '<th>ipAddress</th>' +
+    '<td>' + connection.ipAddress + '</td>' +
+    '<th>gateway</th>' +
+    '<td>' + connection.gateway + '</td>' +
+    '</tr>' +
+    '<tr>' +
+    '<th>netmask</th>' +
+    '<td>' + connection.netmask + '</td>' +
+    '<th>dns1</th>' +
+    '<td>' + connection.dns1 + '</td>' +
+    '</tr>' +
     '</table>';
   print('connection', info);
 }
@@ -48,8 +50,8 @@ function initDevPage() {
     },
     onFailure: function (res) {
       print('lgudid', res.errorCode, ' - ', res.errorText);
-    }}
-  );
+    }
+  });
   webOSDev.connection.getStatus({
     onSuccess: function (info) {
       getConnectionStatus(info);

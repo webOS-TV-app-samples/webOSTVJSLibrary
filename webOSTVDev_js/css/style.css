@@ -1,0 +1,49 @@
+body {
+	background: #dddddd;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	text-align: right;
+}
+
+table,
+th,
+td {
+	font-size: 18px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table {
+	width: 100%;
+}
+
+th,
+td {
+	padding: 6px;
+	vertical-align: top;
+	text-align: left;
+}
+
+th {
+	width: 10%;
+	background-color: gray;
+	color: white;
+}
+
+td {
+	width: 20%;
+}
+
+button {
+	font-size: 18px;
+	padding: 3px;
+}
+
+button#refresh {
+	color: blue;
+}

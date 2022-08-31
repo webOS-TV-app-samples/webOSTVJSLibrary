@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sample App for webOS-dev.js</title>
+    <script src="lib/webOSTVjs-1.2.4/webOSTV-dev.js"></script>
+    <script src="js/app4tv-dev.js"></script>
+  </head>
+  <body>
+    <h1>Sample App for webOSTV-dev.js</h1>
+    <h2><button id="refresh">Reload</button></h2>
+    <table>
+      <tr>
+        <th rowspan="4" style="width: 5%">webOSDev</th>
+      </tr>
+      <tr>
+        <th>LGUDID</th>
+        <td id="lgudid" colspan="3"></td>
+      </tr>
+      <tr>
+        <th>launch</th>
+        <td>
+          <button id="launchApp" style="background-color: skyblue">
+            LAUNCH TEST APP
+          </button>
+        </td>
+        <td>
+          <button id="launchBrowser" style="background-color: skyblue">
+            LAUNCH BROWSER
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th>connection.getStatus</th>
+        <td id="connection" colspan="3"></td>
+      </tr>
+    </table>
+  </body>
+</html>

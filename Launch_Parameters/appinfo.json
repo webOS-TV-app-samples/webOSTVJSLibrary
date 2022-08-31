@@ -1,5 +1,5 @@
 {
-  "id": "com.sample.launch",
+  "id": "com.sample.launchparams",
   "version": "1.0.0",
   "type": "web",
   "main": "index.html",

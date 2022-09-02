@@ -63,7 +63,7 @@ function initDevPage() {
   });
   document.querySelector('#launchApp').addEventListener('click', function () {
     webOSDev.launch({
-      id: 'com.sample.launch',
+      id: 'com.sample.launchparams',
       params: {
         firstParam: 'firstValue',
         secondParam: 'secondValue',

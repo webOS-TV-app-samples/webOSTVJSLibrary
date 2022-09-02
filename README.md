@@ -4,13 +4,12 @@ The webOSTV.js is a portable library to access to TV-specific features and funct
 library provides a set of APIs for your app to use on webOS TV. For more information and the latest webOSTV.js download,
 refer to [webOSTV.js](https://webostv.developer.lge.com/develop/references/webostvjs-introduction) in the API menu.
 
-Here are sample codes for how to use the webOSTV.js library. You can also download sample codes and check the results.
+Here are sample codes for how to use the webOSTV.js library.
 
 ## Getting Device Information
 
 To get device information, use
-the [deviceinfo](https://webostv.developer.lge.com/develop/references/webostvjs-webos#deviceinfo) method of webOS
-API.
+the [deviceinfo](https://webostv.developer.lge.com/develop/references/webostvjs-webos#deviceinfo) method of webOS API.
 
 ```javascript
 webOS.deviceInfo(function (device) {
@@ -30,7 +29,7 @@ the [launch](https://webostv.developer.lge.com/develop/references/webostvjs-webo
 ```javascript
 document.querySelector('#launchApp').addEventListener('click', function () {
   webOSDev.launch({
-    id: 'com.sample.launch',
+    id: 'com.sample.launchparams',
     params: {
       firstParam: 'firstValue',
       secondParam: 'secondValue',
@@ -47,13 +46,13 @@ document.querySelector('#launchApp').addEventListener('click', function () {
 
 You can also execute an app using the ares-launch command of webOS TV CLI.
 
-```powershell
+```bash
 ares-launch com.sample.launch -p "{'key1':'value1','key2':'value2'}"
 ```
 
 For more information about
 the [ares-launch](https://webostv.developer.lge.com/develop/tools/cli-introduction#ares-launch)
-command, refer to the CLI section in the SDK menu.
+command, refer to the CLI guide.
 
 ## Passing Launch Parameters
 
@@ -78,19 +77,18 @@ document.addEventListener('webOSRelaunch', function (inData) {
 You can install sample apps and see the results in the webOS TV or webOS TV emulator as below image.
 
 - com.sample.webostvjs  
-  ![com.sample.webostvjs.JPG](https://webostv.developer.lge.com/download_file/view_inline/12650/)
+  ![com.sample.webostvjs.PNG](screenshots/com.sample.webostvjs.PNG)
 
 - com.sample.webostvjs.dev  
-  ![com.sample.webostvjs.dev.JPG](https://webostv.developer.lge.com/download_file/view_inline/12647/)
+  ![com.sample.webostvjs.dev.PNG](screenshots/com.sample.webostvjs.dev.PNG)
 
-- com.sample.launch  
-  ![com.sample.launch.JPG](https://webostv.developer.lge.com/download_file/view_inline/12648/)
+- com.sample.launchparams  
+  ![com.sample.launchparams.PNG](screenshots/com.sample.launchparams.PNG)
 
 ## Do's and Don'ts
 
-- Do test these sample apps on your webOS TV or webOS TV emulator.
+- **Do** test these sample apps on your webOS TV or webOS TV Simulator.
 
-- Do update the webOSTV.js library when the new version is released.
+- **Do** update the webOSTV.js library when the new version is released.
 
-- Do install the 'com.sample.launch' sample app with the 'com.sample.webostv.dev' sample app. The LAUNCH TEST APP button
-  in the 'com.sample.webostv.dev' sample app does not work if the 'com.sample.launch' sample app is not installed.
+- **Do** install the 'com.sample.launchparams' sample app with the 'com.sample.webostv.dev' sample app. The LAUNCH TEST APP button in the 'com.sample.webostv.dev' sample app does not work if the 'com.sample.launchparams' sample app is not installed.
